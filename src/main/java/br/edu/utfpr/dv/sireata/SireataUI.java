@@ -69,14 +69,16 @@ public class SireataUI extends UI {
                     // logged in
                     getNavigator().navigateTo(LoginView.NAME);
                     return false;
-                } else if (isLoggedIn && isLoginView) {
+                } /*Os demais 'else if' são redundantes, por darem o mesmo retorno.
+		
+		else if (isLoggedIn && isLoginView) {
                     // If someone tries to access to login view while logged in,
                     // then cancel
                     return true;
                 } else if(!isMainView && !isLoginView) {
                 	return true;
-                }
-
+                }*/
+		
                 return true;
             }
 
