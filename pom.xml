@@ -360,6 +360,8 @@
 					<id>vaadin-prereleases</id>
 					<url>http://maven.vaadin.com/vaadin-prereleases</url>
 				</pluginRepository>
+				
+			<!--repositorio iguais o da linha 347-->
 				<pluginRepository>
 					<id>vaadin-snapshots</id>
 					<url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
