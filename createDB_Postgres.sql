@@ -34,7 +34,8 @@ CREATE TABLE departamentos (
 	PRIMARY KEY (iddepartamento),
 	CONSTRAINT fk_departamento_campus FOREIGN KEY (idcampus) REFERENCES campus (idcampus) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-CREATE INDEX fk_departamento_campus_idx ON departamentos (idcampus);
+--Elemento ja criado
+--CREATE INDEX fk_departamento_campus_idx ON departamentos (idcampus);
 
 CREATE TABLE usuarios (
 	idusuario SERIAL NOT NULL,
@@ -62,9 +63,10 @@ CREATE TABLE orgaos (
 	CONSTRAINT fk_orgao_presidente FOREIGN KEY (idpresidente) REFERENCES usuarios (idusuario) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	CONSTRAINT fk_orgao_secretario FOREIGN KEY (idsecretario) REFERENCES usuarios (idusuario) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-CREATE INDEX fk_orgao_departamento_idx ON orgaos (iddepartamento);
-CREATE INDEX fk_orgao_presidente_idx ON orgaos (idpresidente);
-CREATE INDEX fk_orgao_secretario_idx ON orgaos (idsecretario);
+--Elemento ja criado
+--CREATE INDEX fk_orgao_departamento_idx ON orgaos (iddepartamento);
+--CREATE INDEX fk_orgao_presidente_idx ON orgaos (idpresidente);
+--CREATE INDEX fk_orgao_secretario_idx ON orgaos (idsecretario);
 
 CREATE TABLE membros (
 	idorgao INT NOT NULL,
@@ -74,8 +76,9 @@ CREATE TABLE membros (
 	CONSTRAINT fk_membro_orgao FOREIGN KEY (idorgao) REFERENCES orgaos (idorgao) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	CONSTRAINT fk_membro_usuario FOREIGN KEY (idusuario) REFERENCES usuarios (idusuario) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-CREATE INDEX fk_membro_orgao_idx ON membros (idorgao);
-CREATE INDEX fk_membro_usuario_idx ON membros (idusuario);
+--Elemento ja criado
+--CREATE INDEX fk_membro_orgao_idx ON membros (idorgao);
+--CREATE INDEX fk_membro_usuario_idx ON membros (idusuario);
 
 CREATE TABLE atas (
 	idata SERIAL NOT NULL,
@@ -99,9 +102,10 @@ CREATE TABLE atas (
 	CONSTRAINT fk_ata_secretario FOREIGN KEY (idsecretario) REFERENCES usuarios (idusuario) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	CONSTRAINT fk_ata_presidente FOREIGN KEY (idpresidente) REFERENCES usuarios (idusuario) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-CREATE INDEX fk_ata_orgao_idx ON atas (idorgao);
-CREATE INDEX fk_ata_secretario_idx ON atas (idsecretario);
-CREATE INDEX fk_ata_presidente_idx ON atas (idpresidente);
+--Elemento ja criado
+--CREATE INDEX fk_ata_orgao_idx ON atas (idorgao);
+--CREATE INDEX fk_ata_secretario_idx ON atas (idsecretario);
+--CREATE INDEX fk_ata_presidente_idx ON atas (idpresidente);
 
 CREATE TABLE pautas (
 	idpauta SERIAL NOT NULL,
@@ -112,7 +116,8 @@ CREATE TABLE pautas (
 	PRIMARY KEY (idpauta),
 	CONSTRAINT fk_pauta_ata FOREIGN KEY (idata) REFERENCES atas (idata) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-CREATE INDEX fk_pauta_ata_idx ON pautas (idata);
+--Elemento ja criado
+--CREATE INDEX fk_pauta_ata_idx ON pautas (idata);
 
 CREATE TABLE ataparticipantes (
 	idataparticipante SERIAL NOT NULL,
@@ -126,8 +131,9 @@ CREATE TABLE ataparticipantes (
 	CONSTRAINT fk_ataparticipantes_ata FOREIGN KEY (idata) REFERENCES atas (idata) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	CONSTRAINT fk_ataparticipantes_usuario FOREIGN KEY (idusuario) REFERENCES usuarios (idusuario) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-CREATE INDEX fk_ataparticipantes_ata_idx ON ataparticipantes (idata);
-CREATE INDEX fk_ataparticipantes_usuario_idx ON ataparticipantes (idusuario);
+--Elemento ja criado
+--CREATE INDEX fk_ataparticipantes_ata_idx ON ataparticipantes (idata);
+--CREATE INDEX fk_ataparticipantes_usuario_idx ON ataparticipantes (idusuario);
 
 CREATE TABLE anexos (
     idanexo SERIAL NOT NULL,
@@ -138,7 +144,8 @@ CREATE TABLE anexos (
     PRIMARY KEY (idanexo),
 	CONSTRAINT fk_anexos_ata FOREIGN KEY (idata) REFERENCES atas (idata) ON UPDATE NO ACTION ON DELETE NO ACTION
 );
-CREATE INDEX fk_anexos_ata_idx ON anexos (idata);
+--Elemento ja criado
+--CREATE INDEX fk_anexos_ata_idx ON anexos (idata);
 
 CREATE TABLE comentarios (
 	idcomentario SERIAL NOT NULL,
@@ -152,8 +159,9 @@ CREATE TABLE comentarios (
 	CONSTRAINT fk_comentario_pauta FOREIGN KEY (idpauta) REFERENCES pautas (idpauta) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	CONSTRAINT fk_comentario_usuario FOREIGN KEY (idusuario) REFERENCES usuarios (idusuario) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-CREATE INDEX fk_comentario_pauta_idx ON comentarios (idpauta);
-CREATE INDEX fk_comentario_usuario_idx ON comentarios (idusuario);
+--Elemento ja criado
+--CREATE INDEX fk_comentario_pauta_idx ON comentarios (idpauta);
+--CREATE INDEX fk_comentario_usuario_idx ON comentarios (idusuario);
 
 CREATE OR REPLACE FUNCTION year(timestamp) RETURNS integer AS $$
 DECLARE
