@@ -820,11 +820,14 @@
  * @group panel
  */
 
+/*
 @-webkit-keyframes v-popupview-animate-in {
 		0% {
 		-webkit-transform: scale(0);
 	}
 	}
+	Esta mesma mudança é feito abaixo.
+*/
 
 @-moz-keyframes v-popupview-animate-in {
 		0% {
@@ -927,7 +930,7 @@
 /**
  * @group window
  */
-
+/*
 @-webkit-keyframes valo-modal-window-indication {
 		0% {
 		opacity: 0;
@@ -945,7 +948,8 @@
 		opacity: 1;
 	}
 	}
-
+	A mudança é repetida abaixo
+*/
 @keyframes valo-modal-window-indication {
 		0% {
 		opacity: 0;
@@ -954,7 +958,7 @@
 		opacity: 1;
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-scale-down-fade {
 		100% {
 		-webkit-transform: scale(0.8);
@@ -968,6 +972,8 @@
 		opacity: 0;
 	}
 	}
+	A mudança é repetida abaixo
+*/
 
 @keyframes valo-animate-out-scale-down-fade {
 		100% {
