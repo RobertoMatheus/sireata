@@ -17,6 +17,13 @@ import com.vaadin.ui.Upload.SucceededListener;
 import br.edu.utfpr.dv.sireata.bo.AnexoBO;
 import br.edu.utfpr.dv.sireata.model.Anexo;
 
+
+public class alertExcep(String alert){
+	
+			Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e);
+			
+			Notification.show(alert, e.getMessage(), Notification.Type.ERROR_MESSAGE);
+}
 public class EditarAnexoWindow extends EditarWindow {
 
 	private final Anexo anexo;
@@ -75,9 +82,13 @@ public class EditarAnexoWindow extends EditarWindow {
 			
 			this.close();
 		}catch(Exception e){
+			/*
 			Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e);
 			
 			Notification.show("Salvar Anexo", e.getMessage(), Notification.Type.ERROR_MESSAGE);
+			*/
+			alertExcep("Salvar Anexo");
+			
 		}
 	}
 	
@@ -98,9 +109,11 @@ public class EditarAnexoWindow extends EditarWindow {
 	            tempFile.deleteOnExit();
 	            return new FileOutputStream(tempFile);
 	        } catch (Exception e) {
-	        	Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e);
+	        	/*Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e);
 	            
 	            Notification.show("Carregamento do Arquivo", e.getMessage(), Notification.Type.ERROR_MESSAGE);
+		    */
+			alertExcep("Carregamento do Arquivo");
 	        }
 
 	        return null;
@@ -125,9 +138,12 @@ public class EditarAnexoWindow extends EditarWindow {
 	            
 	            Notification.show("Carregamento do Arquivo", "O arquivo foi enviado com sucesso.\n\nClique em SALVAR para concluir a submissão.", Notification.Type.HUMANIZED_MESSAGE);
 	        } catch (Exception e) {
+				/*
 	        	Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e);
 	            
 	            Notification.show("Carregamento do Arquivo", e.getMessage(), Notification.Type.ERROR_MESSAGE);
+		    */
+			alertExcep("Carregamento do Arquivo");
 	        }
 		}
 	}
