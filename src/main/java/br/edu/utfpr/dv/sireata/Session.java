@@ -7,7 +7,8 @@ import br.edu.utfpr.dv.sireata.model.Usuario;
 public class Session {
 	
 	public static boolean isAutenticado(){
-		return ((VaadinSession.getCurrent().getAttribute("usuario") != null) && (((Usuario)VaadinSession.getCurrent().getAttribute("usuario")).getIdUsuario() != 0));
+		//Classe com a mesma função.
+		return (getUsuario() && (getUsuario()).getIdUsuario() != 0));
 	}
 
 	public static void setUsuario(Usuario usuario){
@@ -21,7 +22,7 @@ public class Session {
 			return (Usuario)VaadinSession.getCurrent().getAttribute("usuario");
 		}
 	}
-	
+	//Loop infinito? Classe com o mesmo nome?
 	public static boolean isAdministrador(){
 		return Session.getUsuario().isAdministrador();
 	}
@@ -33,7 +34,9 @@ public class Session {
 	public static byte[] getReport(String id){
 		byte[] report = (byte[]) VaadinSession.getCurrent().getAttribute(id);
 		
-		VaadinSession.getCurrent().setAttribute(id, null);
+		putReport(id,null);
+		//Classe com a mesma função.
+		//VaadinSession.getCurrent().setAttribute(id, null);
 		
 		return report;
 	}
