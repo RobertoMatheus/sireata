@@ -29,6 +29,7 @@
  * @group util
  */
 
+/*
 @-webkit-keyframes valo-animate-in-fade {
 		0% {
 		opacity: 0;
@@ -40,13 +41,15 @@
 		opacity: 0;
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-in-fade {
 		0% {
 		opacity: 0;
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-fade {
 		100% {
 		opacity: 0;
@@ -59,12 +62,14 @@
 	}
 	}
 
+Redundante
+*/
 @keyframes valo-animate-out-fade {
 		100% {
 		opacity: 0;
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-in-slide-down {
 		0% {
 		-webkit-transform: translateY(-100%);
@@ -76,6 +81,8 @@
 		-moz-transform: translateY(-100%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-in-slide-down {
 		0% {
@@ -86,7 +93,7 @@
 		transform: translateY(-100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-in-slide-up {
 		0% {
 		-webkit-transform: translateY(100%);
@@ -98,6 +105,8 @@
 		-moz-transform: translateY(100%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-in-slide-up {
 		0% {
@@ -108,7 +117,7 @@
 		transform: translateY(100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-in-slide-left {
 		0% {
 		-webkit-transform: translateX(100%);
@@ -120,7 +129,8 @@
 		-moz-transform: translateX(100%);
 	}
 	}
-
+Redundante
+*/
 @keyframes valo-animate-in-slide-left {
 		0% {
 		-webkit-transform: translateX(100%);
@@ -130,7 +140,7 @@
 		transform: translateX(100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-in-slide-right {
 		0% {
 		-webkit-transform: translateX(-100%);
@@ -142,6 +152,8 @@
 		-moz-transform: translateX(-100%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-in-slide-right {
 		0% {
@@ -152,7 +164,7 @@
 		transform: translateX(-100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-slide-down {
 		100% {
 		-webkit-transform: translateY(100%);
@@ -164,6 +176,8 @@
 		-moz-transform: translateY(100%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-out-slide-down {
 		100% {
@@ -174,7 +188,7 @@
 		transform: translateY(100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-slide-up {
 		100% {
 		-webkit-transform: translateY(-100%);
@@ -186,6 +200,8 @@
 		-moz-transform: translateY(-100%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-out-slide-up {
 		100% {
@@ -196,7 +212,7 @@
 		transform: translateY(-100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-slide-left {
 		100% {
 		-webkit-transform: translateX(-100%);
@@ -208,6 +224,8 @@
 		-moz-transform: translateX(-100%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-out-slide-left {
 		100% {
@@ -218,7 +236,7 @@
 		transform: translateX(-100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-slide-right {
 		100% {
 		-webkit-transform: translateX(100%);
@@ -230,6 +248,8 @@
 		-moz-transform: translateX(100%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-out-slide-right {
 		100% {
@@ -240,7 +260,7 @@
 		transform: translateX(100%);
 	}
 	}
-
+/*
 @-webkit-keyframes valo-overlay-animate-in {
 		0% {
 		-webkit-transform: translatey(-4px);
@@ -254,6 +274,8 @@
 		opacity: 0;
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-overlay-animate-in {
 		0% {
@@ -265,7 +287,7 @@
 		opacity: 0;
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-slide-down-fade {
 		100% {
 		opacity: 0;
@@ -279,6 +301,8 @@
 		-moz-transform: translatey(30%);
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-out-slide-down-fade {
 		100% {
@@ -342,7 +366,7 @@
 	display: inline-block;
 	text-align: center;
 }
-
+/*
 @font-face {
 	font-family: FontAwesome;
 	font-weight: normal;
@@ -350,6 +374,8 @@
 	src: url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot);
 	src: url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.woff) format("woff"), url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.ttf) format("truetype"), url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.svg#FontAwesome) format("svg");
 }
+Redundante
+*/
 
 .FontAwesome {
 	font-family: FontAwesome;
@@ -360,7 +386,7 @@
 	display: inline-block;
 	text-align: center;
 }
-
+/*
 @-webkit-keyframes v-rotate-360 {
 		to {
 		-webkit-transform: rotate(360deg);
@@ -378,13 +404,15 @@
 		-o-transform: rotate(360deg);
 	}
 	}
+Redundante
+*/
 
 @keyframes v-rotate-360 {
 		to {
 		transform: rotate(360deg);
 	}
 	}
-
+/*
 @-webkit-keyframes v-progress-start {
 		0% {
 		width: 0%;
@@ -402,6 +430,8 @@
 		width: 50%;
 	}
 	}
+Redundante
+*/
 
 @keyframes v-progress-start {
 		0% {
@@ -411,7 +441,7 @@
 		width: 50%;
 	}
 	}
-
+/*
 @-webkit-keyframes v-progress-delay {
 		0% {
 		width: 50%;
@@ -429,6 +459,8 @@
 		width: 90%;
 	}
 	}
+Redundante
+*/
 
 @keyframes v-progress-delay {
 		0% {
@@ -438,7 +470,7 @@
 		width: 90%;
 	}
 	}
-
+/*
 @-webkit-keyframes v-progress-wait {
 		0% {
 		width: 90%;
@@ -468,6 +500,8 @@
 		height: 5px;
 	}
 	}
+Redundante
+*/
 
 @keyframes v-progress-wait {
 		0% {
@@ -483,7 +517,7 @@
 		height: 5px;
 	}
 	}
-
+/*
 @-webkit-keyframes v-progress-wait-pulse {
 		0% {
 		opacity: 1;
@@ -507,6 +541,8 @@
 		opacity: 1;
 	}
 	}
+Redundante
+*/
 
 @keyframes v-progress-wait-pulse {
 		0% {
@@ -551,7 +587,7 @@
 	background: black;
 	filter: alpha(opacity=20) progid:DXImageTransform.Microsoft.blur(pixelradius=8, makeShadow=false);
 }
-
+/*
 .v-ie8 .v-shadow .top-left, .v-ie8 .v-shadow-window .top-left {
 	position: absolute;
 	top: -1px;
@@ -561,6 +597,8 @@
 	background: black;
 	filter: alpha(opacity=14) progid:DXImageTransform.Microsoft.blur(pixelradius=0, makeShadow=false);
 }
+Sobreescreve previas alterações
+*/
 
 /**
  * The backgound color for tooltips.
@@ -696,7 +734,7 @@
  *
  * @group table
  */
-
+/*
 @-webkit-keyframes valo-grid-editor-footer-animate-in {
 		0% {
 		margin-top: -30px;
@@ -708,13 +746,15 @@
 		margin-top: -30px;
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-grid-editor-footer-animate-in {
 		0% {
 		margin-top: -30px;
 	}
 	}
-
+/*
 @-webkit-keyframes valo-grid-editor-footer-animate-in-alt {
 		0% {
 		margin-bottom: -31px;
@@ -732,6 +772,8 @@
 		margin-bottom: -1px;
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-grid-editor-footer-animate-in-alt {
 		0% {
@@ -819,7 +861,7 @@
  *
  * @group panel
  */
-
+/*
 @-webkit-keyframes v-popupview-animate-in {
 		0% {
 		-webkit-transform: scale(0);
@@ -831,6 +873,8 @@
 		-moz-transform: scale(0);
 	}
 	}
+Redundante
+*/
 
 @keyframes v-popupview-animate-in {
 		0% {
@@ -927,7 +971,7 @@
 /**
  * @group window
  */
-
+/*
 @-webkit-keyframes valo-modal-window-indication {
 		0% {
 		opacity: 0;
@@ -945,6 +989,8 @@
 		opacity: 1;
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-modal-window-indication {
 		0% {
@@ -954,7 +1000,7 @@
 		opacity: 1;
 	}
 	}
-
+/*
 @-webkit-keyframes valo-animate-out-scale-down-fade {
 		100% {
 		-webkit-transform: scale(0.8);
@@ -968,6 +1014,8 @@
 		opacity: 0;
 	}
 	}
+Redundante
+*/
 
 @keyframes valo-animate-out-scale-down-fade {
 		100% {
