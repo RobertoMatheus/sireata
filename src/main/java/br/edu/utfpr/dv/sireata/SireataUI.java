@@ -69,6 +69,7 @@ public class SireataUI extends UI {
                     // logged in
                     getNavigator().navigateTo(LoginView.NAME);
                     return false;
+			/*
                 } else if (isLoggedIn && isLoginView) {
                     // If someone tries to access to login view while logged in,
                     // then cancel
@@ -76,6 +77,8 @@ public class SireataUI extends UI {
                 } else if(!isMainView && !isLoginView) {
                 	return true;
                 }
+		Redundante
+		*/
 
                 return true;
             }
