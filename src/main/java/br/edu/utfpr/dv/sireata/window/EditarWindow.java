@@ -79,12 +79,14 @@ public abstract class EditarWindow extends Window {
 	}
 	
 	public void adicionarCampo(Component c){
-		if(c instanceof HorizontalLayout){
+		if(c instanceof HorizontalLayout || c instanceof VerticalLayout){
 			((HorizontalLayout)c).setSpacing(true);
+			/*
 		}else if(c instanceof VerticalLayout){
 			((VerticalLayout)c).setSpacing(true);
 		}
-		
+		Pode ser simplificado
+		*/
 		this.vlCampos.addComponent(c);
 	}
 	
