@@ -7,7 +7,11 @@ import br.edu.utfpr.dv.sireata.model.Usuario;
 public class Session {
 	
 	public static boolean isAutenticado(){
+		/*
 		return ((VaadinSession.getCurrent().getAttribute("usuario") != null) && (((Usuario)VaadinSession.getCurrent().getAttribute("usuario")).getIdUsuario() != 0));
+		Ja existe uma classe com com esse proposito
+		*/
+		return (getUsuario().getIdUsuario() !=0);
 	}
 
 	public static void setUsuario(Usuario usuario){
@@ -21,11 +25,12 @@ public class Session {
 			return (Usuario)VaadinSession.getCurrent().getAttribute("usuario");
 		}
 	}
-	
+	/*
 	public static boolean isAdministrador(){
 		return Session.getUsuario().isAdministrador();
 	}
-	
+	Loop infinito
+	*/
 	public static void putReport(byte[] report, String id){
 		VaadinSession.getCurrent().setAttribute(id, report);
 	}
